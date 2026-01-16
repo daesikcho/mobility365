@@ -386,7 +386,7 @@ ul {
 .about-card {
     position: relative;
     background: var(--bg-light);
-    padding: 48px;
+    padding: 36px;
     border-radius: var(--radius-lg);
     overflow: hidden;
 }
@@ -406,7 +406,9 @@ ul {
     line-height: 1.8;
     color: var(--text);
     margin-bottom: 24px;
+    
 }
+
 
 .about-card .desc {
     font-size: 15px;
@@ -673,11 +675,11 @@ ul {
 }
 
 .profile-body {
-    padding: 32px;
+    padding: 24px;
 }
 
 .career-section {
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 }
 
 .career-section:last-child {
