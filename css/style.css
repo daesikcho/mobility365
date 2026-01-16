@@ -716,9 +716,9 @@ ul {
 
 /* 연도 그룹 구분선 */
 .career-section ul li.year-group {
-    border-top: 2px solid var(--border);
-    margin-top: 20px;
-    padding-top: 20px;
+    border-top: 0.5px solid var(--border-light);
+    margin-top: 14px;
+    padding-top: 14px;
 }
 
 .career-section ul li:last-child {
