@@ -183,8 +183,8 @@ ul {
 
 .hero-badge {
     display: inline-block;
-    padding: 8px 20px;
-    background: var(--primary-light);
+    padding: 4px 1px;
+    /* background: var(--primary-light); */
     color: var(--primary);
     font-size: 13px;
     font-weight: 600;
@@ -710,7 +710,15 @@ ul {
     padding: 10px 0;
     font-size: 14px;
     color: var(--text);
-    border-bottom: 1px solid var(--border-light);
+    /* border-bottom: 1px solid var(--border-light); */
+}
+
+
+/* 연도 그룹 구분선 */
+.career-section ul li.year-group {
+    border-top: 2px solid var(--border);
+    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .career-section ul li:last-child {
