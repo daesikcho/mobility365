@@ -83,32 +83,28 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Counter animation for stats
-    const statNumbers = document.querySelectorAll('.stat-number');
+    const statNumbers = document.querySelectorAll('.stat-number[data-count]');
     
     const counterObserver = new IntersectionObserver(function(entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const target = entry.target;
-                const text = target.textContent;
+                const finalNumber = parseInt(target.getAttribute('data-count'));
+                let currentNumber = 0;
+                const duration = 2000;
+                const steps = 60;
+                const increment = finalNumber / steps;
+                const stepTime = duration / steps;
                 
-                // Only animate if it's a pure number
-                if (/^\d+$/.test(text)) {
-                    const finalNumber = parseInt(text);
-                    let currentNumber = 0;
-                    const increment = finalNumber / 50;
-                    const duration = 1500;
-                    const stepTime = duration / 50;
-                    
-                    const counter = setInterval(() => {
-                        currentNumber += increment;
-                        if (currentNumber >= finalNumber) {
-                            target.textContent = finalNumber;
-                            clearInterval(counter);
-                        } else {
-                            target.textContent = Math.floor(currentNumber);
-                        }
-                    }, stepTime);
-                }
+                const counter = setInterval(() => {
+                    currentNumber += increment;
+                    if (currentNumber >= finalNumber) {
+                        target.textContent = finalNumber.toLocaleString();
+                        clearInterval(counter);
+                    } else {
+                        target.textContent = Math.floor(currentNumber).toLocaleString();
+                    }
+                }, stepTime);
                 
                 counterObserver.unobserve(target);
             }
@@ -148,7 +144,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             if (navLink && !navLink.classList.contains('nav-contact')) {
                 if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-                    navLink.style.color = '#E31837';
+                    navLink.style.color = '#FF6F0F';
                 } else {
                     navLink.style.color = '';
                 }
