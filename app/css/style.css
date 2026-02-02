@@ -1,0 +1,119 @@
+/* App Legal Pages - Style */
+:root {
+    --primary: #FF6F0F;
+    --text-dark: #333333;
+    --text: #333333;
+    --text-light: #666;
+    --bg-light: #f8f9fa;
+    --border: #e5e5e5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--text);
+    background-color: #fff;
+    padding: 24px 20px;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Header */
+.legal-header {
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+
+.legal-header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+}
+
+.legal-header p {
+    color: var(--text-light);
+    font-size: 13px;
+}
+
+/* Content */
+.legal-content h2 {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin: 32px 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--primary);
+    display: inline-block;
+}
+
+.legal-content h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin: 20px 0 10px;
+}
+
+.legal-content p {
+    margin-bottom: 14px;
+}
+
+.legal-content ul,
+.legal-content ol {
+    margin: 14px 0;
+    padding-left: 20px;
+}
+
+.legal-content li {
+    margin-bottom: 8px;
+}
+
+.legal-content .article {
+    margin-bottom: 28px;
+}
+
+.legal-content strong {
+    color: var(--text-dark);
+}
+
+/* Table */
+.legal-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 13px;
+}
+
+.legal-content table th,
+.legal-content table td {
+    border: 1px solid var(--border);
+    padding: 10px 12px;
+    text-align: left;
+}
+
+.legal-content table th {
+    background: var(--bg-light);
+    font-weight: 600;
+    color: var(--text-dark);
+    white-space: nowrap;
+}
+
+/* Intro Box (for consent page) */
+.intro-box {
+    background: var(--bg-light);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 28px;
+    border-left: 4px solid var(--primary);
+}
+
+.intro-box p {
+    margin-bottom: 0;
+}

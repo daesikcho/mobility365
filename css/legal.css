@@ -1,0 +1,144 @@
+/* Legal Pages - Style */
+
+.legal-page {
+    padding: 120px 0 80px;
+    min-height: 100vh;
+}
+
+.legal-header {
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+}
+
+.legal-header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 12px;
+}
+
+.legal-header p {
+    color: var(--text-light);
+    font-size: 14px;
+}
+
+.legal-content {
+    line-height: 1.9;
+    color: var(--text);
+}
+
+.legal-content h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin: 40px 0 16px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--primary);
+    display: inline-block;
+}
+
+.legal-content h3 {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin: 28px 0 12px;
+}
+
+.legal-content p {
+    margin-bottom: 16px;
+}
+
+.legal-content ul,
+.legal-content ol {
+    margin: 16px 0;
+    padding-left: 24px;
+}
+
+.legal-content li {
+    margin-bottom: 8px;
+}
+
+.legal-content .article {
+    margin-bottom: 32px;
+}
+
+.legal-content strong {
+    color: var(--text-dark);
+}
+
+/* Table */
+.legal-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.legal-content table th,
+.legal-content table td {
+    border: 1px solid var(--border);
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.legal-content table th {
+    background: var(--bg-light);
+    font-weight: 600;
+    color: var(--text-dark);
+    white-space: nowrap;
+}
+
+/* Intro Box */
+.intro-box {
+    background: var(--bg-light);
+    padding: 24px;
+    border-radius: var(--radius-sm);
+    margin-bottom: 32px;
+    border-left: 4px solid var(--primary);
+}
+
+.intro-box p {
+    margin-bottom: 0;
+}
+
+/* Back Link */
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary);
+    font-weight: 500;
+    margin-top: 48px;
+    transition: var(--transition);
+}
+
+.back-link:hover {
+    gap: 12px;
+}
+
+.back-link svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .legal-page {
+        padding: 100px 0 60px;
+    }
+    
+    .legal-header h1 {
+        font-size: 28px;
+    }
+    
+    .legal-content h2 {
+        font-size: 18px;
+    }
+    
+    .legal-content table th,
+    .legal-content table td {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+}
